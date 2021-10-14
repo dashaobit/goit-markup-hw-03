@@ -192,12 +192,9 @@ h1, h2, h3, ul, p{
      color:var(--primery-text-color)
  }
  .filter-list{
-     margin-top: 94px;
+     margin-bottom: 34px;
  }
- .examples-list{
-     margin-top: 34px;
-     margin-bottom: 94px;
- }
+
 /* button */
 .button{
      border-radius: 4px;
