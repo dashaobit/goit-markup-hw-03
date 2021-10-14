@@ -17,6 +17,7 @@
     --primary-background-color: #2196F3;
     --acсent-background-color:#188CE8;
     --secondary-background-color: #F5F4FA;
+    --section-background-color: #2F303A;
 }
 
  body{
@@ -36,6 +37,7 @@
  .page-header .logo-part{
      color:black;
  }
+ 
  .page-footer .logo-part{
      color: #FFFFFF;
  }
@@ -46,8 +48,22 @@
      text-decoration: none;
      font-style: normal;
  }
-
+ .container{
+     width: 1200px;
+     padding-left: 15px;
+     padding-right: 15px;
+     margin-left: auto;
+     margin-right: auto;
+     outline: 2px solid tomato;
+ }
+h1, h2, h3, ul, p{
+    margin: 0;
+    padding: 0;
+}
  /* header */
+ .page-header{
+     border-bottom: 1px solid #ECECEC;
+ }
  .site-nav .link{
      color: var(--title-text-color);
      font-weight: 500;
@@ -75,89 +91,132 @@
  }
 
  /* hero */
+ .hero{
+     padding-top: 200px;
+     padding-bottom: 200px;
+     text-align: center;
+     background-color: var(--section-background-color);
+ }
  .hero-title{
-    color: var(--title-text-color);
-    font-weight: 900;
-font-size: 44px;
-line-height: 1.36;
-text-align: center;
-letter-spacing: 0.06em;
-text-transform: uppercase;
+     margin-bottom: 30px;
+     color: var(--white-text-color);
+     font-weight: 900;
+     font-size: 44px;
+     line-height: 1.36;
+     text-align: center;
+     letter-spacing: 0.06em;
+     text-transform: uppercase;
  }
 
  /* section общее*/
- .section-title{
-    color: var(--title-text-color);
-    font-weight: 700;
-font-size: 36px;
-line-height: 1.17;
-text-align: center;
+ .section-title{     
+     color: var(--title-text-color);
+     font-weight: 700;
+     font-size: 36px;
+     line-height: 1.17;
+     text-align: center;
  }
-
+ 
  /* feature */
+ 
  .feature-list .title{
-    color: var(--title-text-color);
-   font-weight: 700;
-font-size: 14px;
-line-height: 1.14;
-letter-spacing: 0.03em;
-text-transform: uppercase;
+     color: var(--title-text-color);
+     font-weight: 700;
+     font-size: 14px;
+     line-height: 1.14;
+     letter-spacing: 0.03em;
+     text-transform: uppercase;
+ }
+ .feature-list .list{
+     margin-top: 94px;
+ }
+ .feature-list p,
+ .team p{
+     margin-top: 10px;
  }
 
 /* Examples */
 .work-list .title{
-    color: var(--title-text-color);
+     color: var(--title-text-color);
+     margin-top: 94px;
 }
+.work-list .list{
+     margin-top: 50px;
+     margin-bottom: 120px;
+}
+
 /* team */
 .team .title, .team-title{
-    color: var(--title-text-color);
+     color: var(--title-text-color);
+}
+.section.team{
+    padding-top: 68px;
+    padding-bottom: 94px;
+    background-color: var(--secondary-background-color);
 }
 
 /* footer */
 .adress{
-    color: var(--white-text-color);
-    background-color: #2F303A;
+     color: var(--white-text-color);
 }
 .contact-adress .link{
-    color: var(--contact-text-color);
-    background-color: #2F303A;
+     color: var(--contact-text-color);
 }
 .adress:hover,
 .adress:focus,
 .contact-adress .link:hover,
 .contact-adress .link:focus{
-    color: var(--acсent-text-color);
+     color: var(--acсent-text-color);
+}
+.page-footer{
+     background-color: var(--section-background-color);
+     padding-top: 60px;
+     padding-bottom: 60px;
 }
 
 /* portfolio */
 .filter-title,
 .examples-title{
-    color: var(--title-text-color);
+     color: var(--title-text-color);
 }
 .examples-text{
      color:var(--primery-text-color)
  }
+ .filter-list{
+     margin-top: 94px;
+ }
+ .examples-list{
+     margin-top: 34px;
+     margin-bottom: 94px;
+ }
 /* button */
 .button{
-    color: var(--title-text-color);
-    font-family: inherit;
-    cursor: pointer;
+     border-radius: 4px;
+     color: var(--title-text-color);
+     font-family: inherit;
+     cursor: pointer;
 }
 /* переопределяет и/или добавляет стили для button */
 .button.primary {
-    color: var(--white-text-color);
-    background-color: var(--primary-background-color);
+     min-width: 200px;
+     min-height: 50px;
+     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+     padding: 10px 32px;
+     color: var(--white-text-color);
+     background-color: var(--primary-background-color);
 }
 .button.primary:hover,
 .button.primary:focus{
-    background-color: var(--acсent-background-color);  
+     background-color: var(--acсent-background-color);  
 }
 .button.secondary{
-    color: var(--title-text-color);
-    background-color: var(--secondary-background-color) ;
+     padding: 6px 22px;
+     color: var(--title-text-color);
+     background-color: var(--secondary-background-color) ;
 }
 .button.secondary:hover, 
 .button.secondary:focus{
-    color: var(--white-text-color);
-    background-color: var(--primary-background-color);
+     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+     color: var(--white-text-color);
+     background-color: var(--primary-background-color);
 }
