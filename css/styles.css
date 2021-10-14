@@ -60,6 +60,14 @@ h1, h2, h3, ul, p{
     margin: 0;
     padding: 0;
 }
+
+/* ------section color------- */
+/* .page-header{background-color: yellow;}
+.hero{background-color: coral;}
+.feature-list{background-color: darkgoldenrod;}
+.work-list{background-color: darkorchid;} */
+
+
  /* header */
  .page-header{
      border-bottom: 1px solid #ECECEC;
@@ -116,6 +124,10 @@ h1, h2, h3, ul, p{
      line-height: 1.17;
      text-align: center;
  }
+  .section{
+     padding-top: 94px;
+     padding-bottom: 94px;
+ }
  
  /* feature */
  
@@ -127,9 +139,7 @@ h1, h2, h3, ul, p{
      letter-spacing: 0.03em;
      text-transform: uppercase;
  }
- .feature-list .list{
-     margin-top: 94px;
- }
+ 
  .feature-list p,
  .team p{
      margin-top: 10px;
@@ -138,11 +148,12 @@ h1, h2, h3, ul, p{
 /* Examples */
 .work-list .title{
      color: var(--title-text-color);
-     margin-top: 94px;
 }
 .work-list .list{
      margin-top: 50px;
-     margin-bottom: 120px;
+}
+.section.work-list{
+    padding-top: 0;
 }
 
 /* team */
@@ -150,8 +161,6 @@ h1, h2, h3, ul, p{
      color: var(--title-text-color);
 }
 .section.team{
-    padding-top: 68px;
-    padding-bottom: 94px;
     background-color: var(--secondary-background-color);
 }
 
