@@ -62,31 +62,46 @@ h1, h2, h3, ul, p{
 }
 
 /* ------section color------- */
-.page-header{background-color: yellow;}
+/* .page-header{background-color: yellow;}
 .hero{background-color: coral;}
 .feature-list{background-color: darkgoldenrod;}
-.work-list{background-color: darkorchid;}
+.work-list{background-color: darkorchid;} */
 
 
  /* header */
  .page-header{    
-     border-bottom: 1px solid #ECECEC;
+     border-bottom: 1px solid #ECECEC; 
      padding-top: 24px;
-     padding-bottom: 25px;
+     padding-bottom: 25px;    
  }
 
  .page-header .container {
 display: flex;
- justify-content: space-between;
+align-items: center;
  }
  .header-nav{
  display: flex;
  align-items: center;
   }
- .site-nav, .contact-nav{
-     display: flex; 
-    align-items: center;
+ .site-nav{
+     display: flex;
+     margin-left: 93px; 
  }
+ 
+  .site-nav .item:not(:last-child){
+     margin-right: 50px;
+ }
+ .contact-nav .item:not(:last-child){
+      margin-right: 50px;
+ }
+ .site-nav .link{
+     display: block;
+     padding-top: 24px;
+     padding-bottom: 25px;
+ }
+  /* .site-nav .item:last-child{
+     margin-right: 0;
+ } */
 
  .site-nav .link{
      color: var(--title-text-color);
@@ -112,6 +127,10 @@ display: flex;
  .contact-nav .link:hover,
  .contact-nav .link:focus{
      color: var(--acсent-text-color);
+ }
+ .contact-nav{
+     display: flex; 
+     margin-left: auto;
  }
 
  /* hero */
@@ -156,7 +175,10 @@ display: flex;
      letter-spacing: 0.03em;
      text-transform: uppercase;
  }
- 
+ .feature-list .list{
+     display: flex;
+     justify-content: space-between;
+ }
  
 /* Examples */
 .work-list .title{
@@ -164,6 +186,10 @@ display: flex;
 }
 .section.work-list{
     padding-top: 0;
+}
+.work-list .list{
+    display: flex;
+    justify-content: space-between;
 }
 
 /* team */
@@ -177,6 +203,10 @@ display: flex;
 .feature-list .title{
     margin-bottom: 10px;
 }
+.team .list{
+     display: flex;
+     justify-content: space-between;
+ }
 
 /* footer */
 .adress{
@@ -214,6 +244,22 @@ display: flex;
  .filter-list{
      margin-bottom: 34px;
  }
+.examples-list{
+    display: flex;
+    flex-wrap: wrap;
+}
+.examples-item{
+    width: 370px;
+    /* width: calc((100% - 60px) / 3); */
+    margin-right: 30px;
+    margin-bottom: 30px;
+}
+.examples-item:nth-child(3n){
+    margin-right: 0;
+}
+.examples-item:nth-last-child(-n+3){
+    margin-bottom: 0;
+}
 
 /* button */
 .button{
