@@ -85,6 +85,9 @@ img{
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+.title{
+  color: var(--title-text-color);
+}
 
 /* ------section color------- */
 /* .page-header{background-color: yellow;}
@@ -189,29 +192,25 @@ img{
 
 /* feature */
 
-.feature-title {
-  color: var(--title-text-color);
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-}
 .feature-list {
   display: flex;  
   /* justify-content: space-between; */  
 }
 .feature-item{
+    width: calc((100%-90px)/4);
     margin-right: 30px;
 }
-.feature-item:last-child {
+.feature-item:nth-child(4n) {
   margin-right: 0;
+}
+.feature-list .title{
+   margin-bottom: 10px;
+   font-size: 14px;
+   line-height: 1.14;
+   text-transform: uppercase;
 }
 
 /* Examples */
-.work-title {
-  color: var(--title-text-color);
-}
 .work-section {
   padding-top: 0;
 }
@@ -226,17 +225,15 @@ img{
   margin-right: 0;
 }
 
+
 /* team */
-.team-list .title,
-.team-title {
-  color: var(--title-text-color);
-}
 .team-section {
   background-color: var(--secondary-background-color);
 }
-.team-list .title,
-.feature-list .title {
+.team-list .title {
   margin-bottom: 10px;
+  font-size: 16px;
+  line-height: 1.19; 
 }
 .team-list {
   display: flex;
@@ -303,7 +300,6 @@ img{
 .filter-list {
     display: flex;
     flex-wrap: wrap;
-    text-align: center;
     justify-content: center;
     margin-bottom: 50px;
 }
@@ -333,9 +329,7 @@ img{
     border-right: 1px solid var(--border-color);
     border-bottom: 1px solid var(--border-color);
     border-left: 1px solid var(--border-color);
-    padding-left: 24px;
-    padding-right: 24px;
-    padding-bottom: 20px;
+    padding: 20px 24px;  
 }
 
 /* button */
@@ -345,6 +339,9 @@ img{
   font-family: inherit;
   cursor: pointer;
   border: none;
+  font-family: Roboto, sans-serif;
+  font-weight: 500;
+  font-size: 16px;
 }
 /* переопределяет и/или добавляет стили для button */
 .button.primary {
@@ -354,6 +351,9 @@ img{
   padding: 10px 32px;
   color: var(--white-text-color);
   background-color: var(--primary-background-color);
+  font-weight: 700;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
 }
 .button.primary:hover,
 .button.primary:focus {
@@ -361,8 +361,9 @@ img{
 }
 .button.secondary {
   padding: 6px 22px;
-  color: var(--title-text-color);
   background-color: var(--secondary-background-color);
+  line-height: 1.63;
+  letter-spacing: 0.03em;
 }
 .button.secondary:hover,
 .button.secondary:focus {
